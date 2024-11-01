@@ -23,10 +23,11 @@ footer {
   text-align: center;
 }
 ul {
-  list-style: none;
   text-decoration: none;
+  list-style: none;
   font-family: "Nunito", sans-serif;
   color: rgb(101, 7, 189);
+  font-size: 1.1rem;
 }
 h1 {
   color: #e85c0d;
@@ -50,8 +51,6 @@ h4 {
   color: #243642;
 }
 p {
-  margin-left: 1em;
-  margin-right: 1em;
   color: black;
   font-size: 1.3rem;
 }
@@ -60,7 +59,7 @@ iframe {
   margin: auto;
   display: block;
 }
-img {
+.logo {
   margin: auto;
   display: block;
   border-radius: 30px;
@@ -107,19 +106,24 @@ textarea {
 }
 
 /*producto en cars flexbox*/
+.img-producto {
+  border-radius: 30px;
+}
 .container {
   display: flex;
   flex-direction: row;
-  padding: 0.5em;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
+  margin: 0px;
 }
 .item {
   background-color: #efbc9b;
   border: 3px solid #d6dac8;
   text-align: center;
-  padding: 1rem;
+  padding: 10px;
+  margin: 10px;
+  /*flex: 1 1 30%;*/
 }
 .destacado {
   font-size: 1rem;
@@ -140,7 +144,6 @@ textarea {
   border: 2px solid #1b2831;
   text-align: center;
   font-size: 1.5rem;
-  font-weight: bold;
   border-radius: 5px;
 }
 .item-a {
